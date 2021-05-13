@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="5dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/deleteRiwayat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/timeUser"
+            android:src="@drawable/ic_baseline_delete_24"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/phoneUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/namaUser"
+            android:text="No Telpon User" />
+
+        <TextView
+            android:id="@+id/alamatUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phoneUser"
+            android:text="Alamat User" />
+
+        <TextView
+            android:id="@+id/statusUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/alamatUser"
+            android:text="Status Kunjungan" />
+
+        <TextView
+            android:id="@+id/suhuUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/statusUser"
+            android:text="Suhu Tubuh User"
+            android:textColor="@color/pumpkin"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lokasiUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/suhuUser"
+            android:text="Lokasi Screening User"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/timeUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/suhuUser"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp"
+            android:gravity="center_horizontal"
+            android:text="Jumat, 1 January 2020\nJam 12:10:30"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/namaUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama User"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
